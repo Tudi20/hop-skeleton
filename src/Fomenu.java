@@ -1,5 +1,5 @@
 
-public static class Fomenu {
+public class Fomenu {
 	
 	private static String aktualisFiok;
 
