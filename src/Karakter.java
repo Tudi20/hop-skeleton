@@ -28,4 +28,24 @@ public class Karakter {
 	public int getEletero() {
 		return maxEletero;
 	}
+	
+	public int getSebzes() {
+		return sebzes;
+	}
+	
+	public int getVedelem() {
+		return vedelem;
+	}
+	
+	public String getSpecialNev() {
+		return specialNev;
+	}
+	
+	public int getSpecialSebzes() {
+		return specialSebzes;
+	}
+	
+	public int getSkinTipus() {
+		return skinTipus;
+	}
 }
