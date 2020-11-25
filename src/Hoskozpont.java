@@ -1,3 +1,6 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.List;
 
 public class Hoskozpont {
@@ -16,24 +19,60 @@ public class Hoskozpont {
 		return skinAzonosito;
 	}
 	
-	public void karakterValasztas() {
-		
+	public static void karakterValasztas() {
+		System.out.println("Kiválasztodtad a karaktered");
 	}
 	
-	public void vasarlas() {
-		
+	public static void vasarlas() {
+		Vasarlas t= new Vasarlas();
+		t.choice();
 	}
 	
 	public String getHosnev() {
 		return hosNev;
 	}
 	
-	public void skinModositas() {
-		
+	public static void skinModositas() {
+		System.out.println("Megváltoztadtad a skined");
 	}
 	
-	public void hosnevModositas() {
-		
+	public static void hosnevModositas() {
+		System.out.println("Megváltoztadtad a hõs nevét");
 	}
-
+	public void choice() {
+		InputStreamReader instream = new InputStreamReader(System.in);
+        BufferedReader input = new BufferedReader(instream);
+        
+        System.out.println("karakterValasztas(), vasarlas(), skinModositas(), hosnevModositas()");
+        
+        String be="";
+        try {
+        be=input.readLine();
+        }catch (IllegalArgumentException e) {
+            System.out.println(e);
+            
+        } catch (IOException e) {
+            System.out.println(e);
+        }
+        switch (be) {
+		case "karakterValasztas()": {
+			
+			karakterValasztas();break;
+		}
+case "vasarlas()": {
+			
+	vasarlas();break;
+		}
+case "skinModositas()": {
+	
+	skinModositas();break;
+}
+case "hosnevModositas()": {
+	
+	hosnevModositas();break;
+}
+		default:
+			throw new IllegalArgumentException("Unexpected value: " + be);
+		}
+	}
 }
