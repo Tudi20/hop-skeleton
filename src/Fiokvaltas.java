@@ -31,15 +31,11 @@ public class Fiokvaltas {
         }
         switch (be) {
 		case "kilepesFomenube()": {
-			
 			kilepesFomenube();break;
 		}
-case "fiokKivalaszt()": {
-			
-	fiokKivalaszt();break;
+		case "fiokKivalaszt()": {	
+			fiokKivalaszt();break;
 		}
-
-
 		default:
 			throw new IllegalArgumentException("Unexpected value: " + be);
 		}

@@ -35,15 +35,13 @@ public class Adomany {
         }
         switch (be) {
 		case "alpitvanyKivalaszt()": {
-			
-			alpitvanyKivalaszt();break;
+			alpitvanyKivalaszt();
+			break;
 		}
-case "tamogatottOssezg()": {
-			
-	tamogatottOssezg();break;
+		case "tamogatottOssezg()": {
+			tamogatottOssezg();
+			break;
 		}
-
-
 		default:
 			throw new IllegalArgumentException("Unexpected value: " + be);
 		}

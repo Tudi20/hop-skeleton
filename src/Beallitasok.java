@@ -3,23 +3,24 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Beallitasok {
-	private int hangero;
+	private final int hangero = 100;
 	private boolean rezgomod;
 
 	public void hangeroModosit() {
-		System.out.println("Hangerõt módosítottál");
+		System.out.println("Hangerï¿½t mï¿½dosï¿½tottï¿½l. Hangerï¿½d: " + hangero);
 	}
 	
 	public void rezges() {
-		System.out.println("rezgést módosítottál");
+		System.out.println("rezgï¿½st mï¿½dosï¿½tottï¿½l. Rezgï¿½s:  " + rezgomod);
 	}
 	
 	public void adomany() {
-		
+		Adomany t = new Adomany();
+		t.choice();
 	}
 	
 	public void sugo() {
-		System.out.println("elindítodtad a tutorialt");
+		System.out.println("elindï¿½todtad a tutorialt");
 	}
 	
 	public void fiokvaltas() {

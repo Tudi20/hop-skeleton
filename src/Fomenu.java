@@ -9,6 +9,7 @@ public class Fomenu {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("Program elindult");
+		betoltoKep();
 		choice();
 		
 		
@@ -17,6 +18,7 @@ public class Fomenu {
 		InputStreamReader instream = new InputStreamReader(System.in);
         BufferedReader input = new BufferedReader(instream);
         
+        System.out.println("Írd be, az alábbiak küzöl, hogy melyik metódust akarod lefuttatni! (Ez mindig így lesz)");
         System.out.println("ujJatek(), hoskozpont(), beallitasok(), kilepes(), bejelentkezes(), regisztracio(), fiokMentes()");
         
         String be="";
@@ -75,6 +77,8 @@ case "fiokMentes()": {
 	}
 	
 	private static void beallitasok() {
+		Beallitasok t = new Beallitasok();
+		t.choice();
 		
 	}
 	
@@ -91,7 +95,7 @@ case "fiokMentes()": {
 	}
 	
 	private static void betoltoKep() {
-		System.out.println("Loading...");
+		System.out.println("Töltõképernyõ...");
 	}
 	
 	private static void fiokMentes() {

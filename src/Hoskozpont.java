@@ -55,20 +55,16 @@ public class Hoskozpont {
             System.out.println(e);
         }
         switch (be) {
-		case "karakterValasztas()": {
-			
+		case "karakterValasztas()": {	
 			karakterValasztas();break;
 		}
-case "vasarlas()": {
-			
+		case "vasarlas()": {
 	vasarlas();break;
 		}
-case "skinModositas()": {
-	
+		case "skinModositas()": {
 	skinModositas();break;
 }
-case "hosnevModositas()": {
-	
+		case "hosnevModositas()": {
 	hosnevModositas();break;
 }
 		default:
