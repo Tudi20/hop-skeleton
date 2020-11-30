@@ -10,8 +10,7 @@ public class Hoskozpont {
 	private List<Karakter> karakterLista;
 	private List<Skinek> skinLista;
 	
-	//Milyen karakterazonosító-ra gondolsz?
-	public int getKarakterAzonosito() {
+	public int getHosAzonosito() {
 		return hosAzonosito;
 	}
 	

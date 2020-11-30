@@ -2,7 +2,6 @@
 public class Karakter {
 	private int karakterAzonosito;
 	private String race;
-	//Nem lehet class a neve, mert az kulcsszó...
 	private String osztaly; 
 	private int maxEletero;
 	private int sebzes;
@@ -19,13 +18,11 @@ public class Karakter {
 		return race;
 	}
 	
-	// getClass az egy alap függvény Javában, nem kéne felülírni, lol
 	public String getOsztaly() {
 		return osztaly;
 	}
 	
-	//Milyen eleterõt adjak vissza?
-	public int getEletero() {
+	public int getMaxEletero() {
 		return maxEletero;
 	}
 	
